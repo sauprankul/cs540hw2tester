@@ -12,7 +12,6 @@ if __name__ == '__main__':
 
     # these are a bunch of random test cases
     solve([6, 4, 7, 8, 5, 0, 3, 2, 1])
-    solve([8, 7, 5, 6, 0, 4, 3, 2, 1])
     solve([8, 2, 7, 3, 1, 6, 4, 0, 5])
     solve([[6, 5, 7, 1, 8, 2, 3, 4, 0]])
     solve([8, 6, 5, 7, 1, 4, 0, 2, 3])
@@ -22,7 +21,6 @@ if __name__ == '__main__':
     solve([3, 6, 2, 5, 8, 0, 4, 7, 1])
 
     print_succ([6, 4, 7, 8, 5, 0, 3, 2, 1])
-    print_succ([8, 7, 5, 6, 0, 4, 3, 2, 1])
     print_succ([8, 2, 7, 3, 1, 6, 4, 0, 5])
     print_succ([6, 5, 7, 1, 8, 2, 3, 4, 0])
     print_succ([8, 6, 5, 7, 1, 4, 0, 2, 3])
@@ -34,6 +32,8 @@ if __name__ == '__main__':
     # These are unsolvable
     #solve([7, 2, 8, 5, 0, 4, 3, 6, 1])
     #solve([1, 2, 3, 4, 0, 6, 7, 8, 5])
+    #solve([8, 7, 5, 6, 0, 4, 3, 2, 1])
+
 
 
     # these are examples from the writeup
@@ -62,5 +62,5 @@ if __name__ == '__main__':
     print("If the time below is all you see, your code is good.")
 
     endtime = time.time()
-    print("Elapsed time was: " + str(endtime - starttime))
-    print("Ref elapsed time: 32.65")
+    print("Elapsed time was: " + str(endtime - starttime) + "s")
+    print("Ref elapsed time: 3.1s")
