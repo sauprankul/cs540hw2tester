@@ -17,6 +17,7 @@ If your output matches mine (Saurabh's), you'll only see the following line:
 Otherwise, you'll see something like this:
 
 Yours: Max queue length: 367
+
 Ref:   Max queue length: 366
 
 Note: This program will generate a file called test.txt. Deleting or modifying
