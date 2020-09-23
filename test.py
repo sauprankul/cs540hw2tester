@@ -63,4 +63,5 @@ if __name__ == '__main__':
 
     endtime = time.time()
     print("Elapsed time was: " + str(endtime - starttime) + "s")
-    print("Ref elapsed time: 3.1s")
+    print("Ref elapsed time: 0.60s")
+    print("Current record:   0.166s")
