@@ -5,14 +5,12 @@ import time
 if __name__ == '__main__':
 
     # set this to "new" for updated version
-    # that demands requeueing
+    # that demands requeuing
     # set this to "original"
     # for the crappy one
     ref_version = "new"
-    # this is necessary to print to file
-    #solve([8, 6, 7, 2, 5, 4, 3, 0, 1] )
-    #solve2([4,3,8,5,1,6,7,2,0])
 
+    # this is necessary to print to file
     backup_stdout = sys.stdout
     sys.stdout = open('test.txt', 'w')
     starttime = time.time()
@@ -78,7 +76,7 @@ if __name__ == '__main__':
     elif len(live_l) < len(ref_l):
         print("Looks like you didn't print enough stuff")
     elif len(live_l) > len(ref_l):
-        print("Looks like you didn't printed too much stuff")
+        print("Looks like you printed too much stuff")
     print("If the time below is all you see, your code is good.")
 
     print("Elapsed time was: " + str((endtime - starttime)) + "s")
