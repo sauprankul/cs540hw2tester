@@ -4,7 +4,15 @@ import time
 
 if __name__ == '__main__':
 
+    # set this to "new" for updated version
+    # that demands requeueing
+    # set this to "original"
+    # for the crappy one
+    ref_version = "new"
     # this is necessary to print to file
+    #solve([8, 6, 7, 2, 5, 4, 3, 0, 1] )
+    #solve2([4,3,8,5,1,6,7,2,0])
+
     backup_stdout = sys.stdout
     sys.stdout = open('test.txt', 'w')
     starttime = time.time()
@@ -29,7 +37,7 @@ if __name__ == '__main__':
     print_succ([6, 5, 7, 4, 0, 2, 3, 1, 8])
     print_succ([3, 6, 2, 5, 8, 0, 4, 7, 1])
 
-    # These are not solvable
+    # These are unsolvable
     #solve([7, 2, 8, 5, 0, 4, 3, 6, 1])
     #solve([1, 2, 3, 4, 0, 6, 7, 8, 5])
     #solve([8, 7, 5, 6, 0, 4, 3, 2, 1])
@@ -46,7 +54,10 @@ if __name__ == '__main__':
     sys.stdout.close()
     sys.stdout = backup_stdout
     live = open('test.txt', 'r')
-    ref = open('ref.txt', 'r')
+    if ref_version == "new":
+        ref = open('ref.txt', 'r')
+    else:
+        ref = open('badref.txt', 'r')
 
     live_l = live.readlines()
     ref_l = ref.readlines()
@@ -71,5 +82,5 @@ if __name__ == '__main__':
     print("If the time below is all you see, your code is good.")
 
     print("Elapsed time was: " + str((endtime - starttime)) + "s")
-    print("Ref elapsed time: 0.58s")
-    print("Record is:        0.166s")
+    print("Ref elapsed time: 0.62s")
+
