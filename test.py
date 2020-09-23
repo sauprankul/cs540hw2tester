@@ -29,7 +29,7 @@ if __name__ == '__main__':
     print_succ([6, 5, 7, 4, 0, 2, 3, 1, 8])
     print_succ([3, 6, 2, 5, 8, 0, 4, 7, 1])
 
-    # These are unsolvable
+    # These are not solvable
     #solve([7, 2, 8, 5, 0, 4, 3, 6, 1])
     #solve([1, 2, 3, 4, 0, 6, 7, 8, 5])
     #solve([8, 7, 5, 6, 0, 4, 3, 2, 1])
@@ -70,6 +70,7 @@ if __name__ == '__main__':
         print("Looks like you didn't printed too much stuff")
     print("If the time below is all you see, your code is good.")
 
+<<<<<<< HEAD
     print("Elapsed time was: " + str((endtime - starttime)) + "s")
     print("Ref elapsed time: 0.58s")
     print("Record is:        0.166s")
