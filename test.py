@@ -70,7 +70,6 @@ if __name__ == '__main__':
         print("Looks like you didn't printed too much stuff")
     print("If the time below is all you see, your code is good.")
 
-<<<<<<< HEAD
     print("Elapsed time was: " + str((endtime - starttime)) + "s")
     print("Ref elapsed time: 0.58s")
     print("Record is:        0.166s")
