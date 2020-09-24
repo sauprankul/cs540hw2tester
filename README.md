@@ -30,7 +30,7 @@ How to run:
 1. download / `git clone` the repo
 2. python3 test2.py
 
-Will generate 10 random test cases of depth 10 every time you run, and perform two checks, an equality and length check.
+Will generate 10 random test cases of `depth` 10 every time you run, and perform two checks, an equality and length check.
 
 * Equality: is your solution the same as the generated test case?
 * Length: is your solution less than or equal to the length of the test case?
